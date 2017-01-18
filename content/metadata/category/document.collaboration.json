@@ -1,0 +1,13 @@
+{
+    "sortBy": "date",
+    "reverse": false,
+      "metadata": {
+    	"name" : "Operating & Collaboration"
+    },
+    "displayName": "document.collaboration",
+    "perPage": 15,
+    "noPageOne": true,
+    "layout": "default.category.html",
+    "first": ":categoryPath/index.html",
+    "path": ":categoryPath/page/:num/index.html"
+}

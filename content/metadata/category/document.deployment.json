@@ -1,0 +1,13 @@
+{
+    "sortBy": "date",
+    "reverse": false,
+      "metadata": {
+    	"name" : "Deployment"
+    },
+    "displayName": "document.deployment",
+    "perPage": 14,
+    "noPageOne": true,
+    "layout": "default.category.html",
+    "first": ":categoryPath/index.html",
+    "path": ":categoryPath/page/:num/index.html"
+}

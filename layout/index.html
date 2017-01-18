@@ -1,0 +1,238 @@
+{{#extend "default"}}
+  {{#content "main"}}
+
+<div class="main-container transition--fade">
+    <section class="height-100 imagebg cover cover-4 parallax" data-overlay="3">
+        <div class="background-image-holder background--bottom">
+            <img alt="image" src="{{backgroundBottom.image}}" />
+        </div>
+        <div class="container pos-vertical-center">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h1>{{{backgroundBottom.title}}}</h1>
+
+                    <p class="lead">{{{backgroundBottom.name}}}</p>
+                    <a class="btn btn--success inner-link btn--merge" href="http://easywebhub.com/tong-quan-ve-easywebhub-va-easybuilder/">
+                        <span class="btn__text">
+                            Getting Started
+                        </span>
+                    </a>
+                    <a class="btn btn--primary inner-link" href="{{global.download_link}}">
+                        <span class="btn__text">
+                            Get EasyBuilder 
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+       <div class="container">
+           <div class="row">
+               <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                   <h3>{{this.sectionInfo.title}}</h3>
+                   <p class="lead">
+                       {{this.sectionInfo.name}}
+                   </p>
+               </div>
+           </div>
+           <!--end of row-->
+       </div>
+       <!--end of container-->
+   </section>
+    <section class="section--overlap">
+         <div class="container">
+             <div class="row">
+                 {{#each sectionInfo.steps}}
+                 <div class="col-sm-4 text-center">
+                     <div class="piechart piechart-3" data-size="200" data-value="{{this.data-value}}">
+                         <div class="piechart__overlay">
+                             <div class="piechart__description">
+                                 <i class="{{this.icon}}"></i>
+                             </div>
+                         </div>
+                     </div>
+                     <h5>{{this.title}}</h5>
+                     <p>{{{this.description}}}</p>
+                 </div>
+                 {{/each}}
+             </div>
+             <!--end of row-->
+         </div>
+         <!--end of container-->
+     </section>
+     <section class="features features-7 imagebg height-80 parallax" data-overlay="5">
+         <div class="background-image-holder">
+             <img alt="image" src="/img/hero10.jpg" />
+         </div>
+         <div class="container">
+             <div class="row">
+                 <div class="col-sm-12 text-center">
+                     <h2><em>{{sectionInfoE.title}}</em>{{{sectionInfoE.em}}}</h2>
+                     <p class="lead">{{sectionInfoE.name}}</p>
+                     <hr>
+                 </div>
+             </div>
+             <div class="row">
+                 {{#each this.sectionInfoE.feature}}
+                 <div class="col-sm-4">
+                      <div class="feature">
+                         <h5>{{{title}}}</h5>
+                         <p>{{name}}</p>
+                     </div>
+                 </div>
+                 {{/each}}
+             </div>
+         </div>
+     </section>
+   <section class="space-bottom--sm">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                   <h3>{{sectionInfoB.title}}</h3>
+                   <p class="lead">
+                       {{{sectionInfoB.name}}}
+                   </p>
+               </div>
+           </div>
+       </div>
+   </section>
+	<!--
+   <section>
+       <div class="container">
+           <div class="row">
+               <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
+                   <div class="tabs-container tabs-4">
+                       <ul class="tabs">
+                          {{#each this.sectionInfoD}}
+                           <li class="active">
+                               <div class="tab__title btn">
+                                   <span class="btn__text">{{title}}</span>
+                               </div>
+                               <div class="tab__content testimonial-5">
+                                   <div class="testimonial text-center">
+                                       <img alt="avatar" src="{{image}}" />
+                                       <hr>
+                                       <h5>&mdash; {{name}}</h5>
+                                       <blockquote>
+                                           &rdquo;{{description}}&ldquo;
+                                       </blockquote>
+                                   </div>
+                               </div>
+                           </li>
+                          {{/each}}
+                       </ul>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+  -->
+
+
+    <!-- <section class="bg--secondary imageblock features features-1">
+       <div class="imageblock__content col-md-5 col-sm-3 pos-left">
+           <div class="background-image-holder">
+               <img alt="image" src="{{sectionInfoA.image}}" />
+           </div>
+       </div>
+       <div class="container">
+           <div class="row">
+               <div class="col-md-6 col-md-push-6 col-sm-8 col-sm-push-4">
+                   <h3>{{sectionInfoA.title}}</h3>
+                   <p class="lead">
+                       {{{sectionInfoA.name}}}
+                   </p>
+                   <hr>
+                   {{#each this.sectionInfoA.icon}}
+                   <div class="col-xs-6">
+                       <div class="feature feature-1">
+                           <i class="{{class}}"></i>
+                           <h5>{{title}}</h5>
+                           <p>{{name}}</p>
+                       </div>
+                   </div>
+                   {{/each}}
+               </div>
+           </div>
+       </div>
+   </section> -->
+   <section class="bg--secondary imageblock features features-12">
+      <div class="imageblock__content col-md-4 col-sm-3 pos-left">
+          <div class="background-image-holder" style="opacity: 1;">
+              <img alt="image" src="{{sectionInfoA.image}}">
+          </div>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-7 col-md-push-5 col-sm-8 col-sm-push-4">
+                  <h4>What makes everything easier?</h4>
+                  <p class="lead">EasyWeb shows a lot of built-in profesional websites with the powerful Builder - this makes building your websites easier than ever before.
+                  </p>
+                  <div class="feature col-sm-6">
+                      <h5>Total Free - High Quality servies</h5>
+                      <p>
+                          Building websites or even running on hosting are total free.
+                          A high quality but free servie, GitHub, helps your websites have unlimited traffic and storage.
+                          <br/>Our websites are also on GitHub.
+                      </p>
+                  </div>
+                  <div class="feature col-sm-6">
+                      <h5>Premium Support or Services</h5>
+                      <p>
+                          Besides free support from community, EasyWeb offers commercial support or services for our Preminum Customers.
+                          Creating elegance layouts is your tasks, lets the other things for our services.
+                      </p>
+                  </div>
+              </div>
+          </div>
+          <!--end of row-->
+      </div>
+      <!--end of container-->
+  </section>
+   <section class="cta cta-6">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                   <h3>{{sectionInfoG.title}}</h3>
+                   <p class="lead">
+                       {{sectionInfoG.name}}
+                   </p>
+                   <a class="btn btn--primary inner-link btn--merge" href="#">
+                       <span class="btn__text">
+                           contact with us
+                       </span>
+                   </a>
+                   <a class="btn btn--success inner-link btn--merge" href="https://github.com/easywebhub/easyapp">
+                       <span class="btn__text">
+                           View on Github
+                       </span>
+                   </a>
+                   
+               </div>
+           </div>
+           <!--end of row-->
+       </div>
+       <!--end of container-->
+   </section>
+
+ <!-- <section class="partners-1">
+     <div class="container">
+         <div class="row">
+             <div class="col-sm-12">
+                 <div class="slider" data-items="6" data-timing="3000">
+                     <ul class="slides">
+                         {{#each sectionInfoH.listImages}}
+                         <li><img alt="img" src="{{this}}" /></li>
+                         {{/each}}
+                     </ul>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section> -->
+
+
+     {{/content}}
+ {{/extend}}

@@ -1,0 +1,14 @@
+{
+    "sortBy": "date",
+    "reverse": false,
+    "metadata": {
+       "title" : "EasyBuilder,a  powerful tool of EasyWeb framework",
+       "description" : " for designers, developers and website administrators"
+    },
+    "displayName": "Tin Tức",
+    "perPage": 10,
+    "noPageOne": true,
+    "layout": "blog.category.html",
+    "first": ":categoryPath/index.html",
+    "path": ":categoryPath/page/:num/index.html"
+}
