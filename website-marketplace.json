@@ -2,7 +2,7 @@
     "version"  : 5,
     "templates": [
         {
-            "name"    : "categorya",
+            "name"    : "categoryaa",
             "url"     : "https://github.com/easywebhub/easy-websites.git",
             "branch"  : "easywebhub-category",
 			"type"    : "code base",
